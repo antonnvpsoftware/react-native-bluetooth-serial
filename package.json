@@ -3,6 +3,6 @@
   "version": "0.0.1",
   "keywords": "react-native",
   "dependencies": {
-    "buffer": "buffer"
-},
+    "buffer": "^4.6.0"
+  }
 }
