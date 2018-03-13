@@ -5,6 +5,7 @@
   "dependencies": {
     "buffer": "^4.6.0",
     "iconv-lite": "^0.4.19",
-    "rijndael-js": "^1.0.0"
+    "rijndael-js": "^1.0.0",
+    "stream": "0.0.2"
   }
 }

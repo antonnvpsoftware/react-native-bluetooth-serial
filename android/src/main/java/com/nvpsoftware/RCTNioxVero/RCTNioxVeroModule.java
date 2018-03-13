@@ -12,6 +12,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Build;
+import android.os.ParcelUuid;
 import android.util.Log;
 import android.util.Base64;
 
@@ -533,6 +534,16 @@ public class RCTNioxVeroModule extends ReactContextBaseJavaModule implements Act
         params.putString("name", device.getName());
         params.putString("address", device.getAddress());
         params.putString("id", device.getAddress());
+
+        WritableArray uuids = Arguments.createArray();
+        ParcelUuid[] array = device.getUuids();
+
+        for (ParcelUuid uuid : array) {
+            uuids.pushString(uuid.getUuid().toString());
+        }
+
+        params.putArray("uuids", uuids);
+
 
         if (device.getBluetoothClass() != null) {
             params.putInt("class", device.getBluetoothClass().getDeviceClass());
