@@ -1,4 +1,4 @@
-package com.rusel.RCTBluetoothSerial;
+package com.nvpsoftware.RCTNioxVero;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -10,13 +10,14 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.ViewManager;
 import com.facebook.react.bridge.JavaScriptModule;
 
-public class RCTBluetoothSerialPackage implements ReactPackage {
-    static final String TAG = "BluetoothSerial";
+public class RCTNioxVeroPackage implements ReactPackage {
+
+    static final String TAG = "NioxVero";
 
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
-        modules.add(new RCTBluetoothSerialModule(reactContext));
+        modules.add(new RCTNioxVeroModule(reactContext));
         return modules;
     }
 
