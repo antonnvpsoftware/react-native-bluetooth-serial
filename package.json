@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "keywords": "react-native",
   "dependencies": {
-    "buffer": "^4.6.0"
+    "buffer": "^4.6.0",
+    "iconv-lite": "^0.4.19",
+    "rijndael-js": "^1.0.0"
   }
 }
